@@ -1,3 +1,5 @@
+name = 'telegraph_export'
+
 from html_telegraph_poster import TelegraphPoster
 from .article import _getArticle, isConfident
 
