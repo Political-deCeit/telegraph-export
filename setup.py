@@ -9,7 +9,7 @@ setup(
     url="https://github.com/Political-deCeit/telegraph-export",
     install_requires=[
         "beautifulsoup4>=4.6.0",
-        "readability",
+        "readability-lxml",
         "html-telegraph-poster",
         "gphoto-2-album",
         "pillow",
