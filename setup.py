@@ -16,4 +16,5 @@ setup(
         "requests",
         "telegram_util",
     ],
+    packages=["telegraph_export"],
 )
