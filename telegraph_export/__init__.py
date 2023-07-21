@@ -1,7 +1,7 @@
 name = 'telegraph_export'
 
 from html_telegraph_poster import TelegraphPoster
-from .article import _getArticle, isConfident
+from .article import _getArticle
 
 def _formaturl(url):
     if not url.strip():
