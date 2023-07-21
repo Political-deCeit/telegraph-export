@@ -76,7 +76,7 @@ def export(
                 )
             else:
                 raise e
-        if force or isConfident(url, article.text):
+        if force:
             return _trimUrl(r["url"])
     except Exception as e:
         if throw_exception:
