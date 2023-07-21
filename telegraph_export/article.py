@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from bs4 import BeautifulSoup
-from readability import Document
+from readability.readability import Document
 from .title import _findTitle
 from .author import _findAuthor
 from .cached_url import get, getFilePath, getFileName
