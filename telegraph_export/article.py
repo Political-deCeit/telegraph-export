@@ -7,7 +7,7 @@ from .title import _findTitle
 from .author import _findAuthor
 from .cached_url import get, getFilePath, getFileName
 from telegram_util import AlbumResult, cutCaptionHtml
-import gphoto_2_album
+from .gphoto_2_album import get as gphoto_2_album_get
 from PIL import Image
 import os
 
@@ -51,7 +51,7 @@ def getContentFromAlbum(r, noText=False):
 
 def getContent(url, force_cache=False):
     if "photos.google.com/share" in url:
-        return getContentFromAlbum(gphoto_2_album.get(url), noText=True)
+        return getContentFromAlbum(gphoto_2_album_get(url), noText=True)
     else:
         return get(url, force_cache=force_cache)
 

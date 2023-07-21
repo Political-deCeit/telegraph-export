@@ -11,7 +11,6 @@ setup(
         "beautifulsoup4>=4.6.0",
         "readability-lxml",
         "html-telegraph-poster",
-        "gphoto-2-album",
         "pillow",
         "requests",
         "telegram_util",
