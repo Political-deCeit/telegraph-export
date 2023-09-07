@@ -20,11 +20,13 @@ def getArticle(
     url,
     throw_exception=False,
     force_cache=False,
+    content=None,
 ):
     try:
         return _getArticle(
             _formaturl(url),
             force_cache=force_cache,
+            content=content,
         )
     except Exception as e:
         if throw_exception:
@@ -49,6 +51,7 @@ def export(
     force=False,
     force_cache=False,
     noSourceLink=False,
+    content=None,
 ):
     try:
         p = TelegraphPoster(access_token=token)
@@ -56,6 +59,7 @@ def export(
             url,
             throw_exception,
             force_cache=force_cache,
+            content=content,
         )
         if not article.text or not article.text.text.strip():
             article.text = "<div>TO BE ADDED</div>"
